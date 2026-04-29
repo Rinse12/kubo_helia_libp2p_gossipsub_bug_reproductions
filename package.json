@@ -1,0 +1,26 @@
+{
+    "name": "helia-to-kubo-gossipsub-message-loss",
+    "version": "1.0.0",
+    "private": true,
+    "type": "module",
+    "description": "Reproducer for ~80% pubsub message loss between helia 6.1.4 (@libp2p/gossipsub 15.0.20) and kubo 0.41.0",
+    "scripts": {
+        "repro:via-kubo": "node reproducer.mjs",
+        "repro:direct": "node reproducer-direct-helia.mjs",
+        "repro": "npm run repro:via-kubo && npm run repro:direct"
+    },
+    "dependencies": {
+        "@helia/block-brokers": "5.2.4",
+        "@libp2p/gossipsub": "15.0.20",
+        "@libp2p/identify": "4.1.3",
+        "@libp2p/websockets": "10.1.11",
+        "@multiformats/multiaddr": "13.0.1",
+        "blockstore-core": "6.1.2",
+        "cborg": "4.5.8",
+        "helia": "6.1.4",
+        "kubo": "0.41.0"
+    },
+    "engines": {
+        "node": ">=22"
+    }
+}
