@@ -19,11 +19,11 @@ The publisher sees nothing wrong: every `pubsub.publish()` returns with `recipie
 
 Self-contained reproducer (~570 LOC across two scripts + a `package.json` pinning exact versions):
 
-https://github.com/plebbit/kubo_helia_libp2p_bug_reproductions/tree/main/helia_to_kubo_gossipsub_message_loss
+https://github.com/Rinse12/kubo_helia_libp2p_gossipsub_bug_reproductions
 
 ```
-git clone https://github.com/plebbit/kubo_helia_libp2p_bug_reproductions
-cd kubo_helia_libp2p_bug_reproductions/helia_to_kubo_gossipsub_message_loss
+git clone https://github.com/Rinse12/kubo_helia_libp2p_gossipsub_bug_reproductions
+cd kubo_helia_libp2p_gossipsub_bug_reproductions
 npm install
 npm run repro:via-kubo   # the failing case
 npm run repro:direct     # the control: no kubo, 30/30 clean
